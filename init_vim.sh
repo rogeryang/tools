@@ -13,6 +13,7 @@ mkdir ~/opt
 cd ~/opt
 git clone https://github.com/cquery-project/cquery --single-branch --depth=1
 cd cquery
-git submodule update --init && ./waf configure build
+git submodule update --init && ./waf configure build && sudo ./waf install
 
+mkdir -p ~/.cquery/cache
 
